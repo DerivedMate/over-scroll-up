@@ -17,10 +17,25 @@
 
 .return {
   transform: translateY(0);
-  transition: transform var(--t) 0s ease-out;
+  transition: transform calc(var(--t) * 2) 0s ease-out;
 }
 
 p {
   padding: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.settings {
+  z-index: 1000;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40vw;
+  height: 20vh;
+  padding: 10px;
+  background-color: #fefefe;
+  color: #1b1b1b;
+  justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
 }
