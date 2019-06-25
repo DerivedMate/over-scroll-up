@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ball {
+  --y: 0;
+  --b: .5px;
+  width: 100vw;
+  height: 300vh;
+  backface-visibility: hidden;
+  transform: translateY(calc(var(--y) * var(--b)));
+  transition: transform var(--t) 0s linear;
+  will-change: transform, transition;
+}
+
+.return {
+  transform: translateY(0);
+  transition: transform var(--t) 0s ease-out;
+}
+
+p {
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
